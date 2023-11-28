@@ -352,6 +352,7 @@ header{
         color: #c78c06;
         justify-content: end;
         align-items: start;
+        padding: 2%;
     }
 
     footer p{
