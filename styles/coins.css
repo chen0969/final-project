@@ -1,0 +1,82 @@
+/* chose coin general setting */
+.chose0{fill:#776905;}
+.chose1{fill:#FFE41D;}
+.chose2{fill:none;}
+.chose3{fill:#FFFFFF;stroke:#FFE41D;stroke-width:5;stroke-miterlimit:10;}
+.chose4{fill:none;stroke:#776905;stroke-width:10;stroke-miterlimit:10;}
+.chose5{fill:#F6E046;}
+.chose6{clip-path:url(#coin-mask_00000005969475207964675830000001484368526017688452_);}
+.chose7{opacity:0.8;fill:none;stroke:#FFFFFF;stroke-width:50;stroke-miterlimit:10;}
+.chose8{opacity:0.8;fill:none;stroke:#FFFFFF;stroke-width:30;stroke-miterlimit:10;}
+.pointer{cursor: pointer;}
+
+@keyframes grow-star {
+    0%{transform: rotate(0deg) scale(0);}
+    80%{transform: rotate(15deg) scale(0.9);}
+    100%{transform: rotate(15deg) scale(0.9);}
+}
+
+.grow-star{
+    animation: grow-star 0.5s infinite alternate cubic-bezier(.19,.02,.84,1.18) forwards;
+}
+
+@keyframes chosed-flow {
+    from{transform: translateY(0px);}
+    to{transform: translateY(-10px);}
+}
+
+.chosed-flow{
+    animation: chosed-flow 1s infinite alternate;
+}
+
+@keyframes coin-shine {
+    from{transform: translateY(200px);}
+    to{transform: translateY(-300px);}
+}
+
+.coin-shine{
+    animation: coin-shine 1s infinite alternate cubic-bezier(.45,.01,.57,.99);
+}
+
+/* chose coin ids */
+    /* 1 */
+    #side-coin-1{
+        display: none;
+    }
+
+    #front-coin-1{
+        display: block;
+    }
+
+    #coin-stars-1{
+        transform-origin: 250px 250px;
+        display: none;
+    }
+
+    /* 2 */
+    #side-coin-2{
+        display: none;
+    }
+
+    #front-coin-2{
+        display: block;
+    }
+
+    #coin-stars-2{
+        transform-origin: 250px 250px;
+        display: none;
+    }
+
+    /* 3 */
+    #side-coin-3{
+        display: none;
+    }
+
+    #front-coin-3{
+        display: block;
+    }
+
+    #coin-stars-3{
+        transform-origin: 250px 250px;
+        display: none;
+    }

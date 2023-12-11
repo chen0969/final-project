@@ -43,14 +43,14 @@ var people_stop_follow = false;
     function loadObjects() {
         var loader = new THREE.GLTFLoader();
         loader.load(
-            '../three/logo-coin.glb',
+            'three/logo-coin.glb',
             function (glb) {
                 const root = glb.scene;
                 root.scale.set(0.1, 0.1, 0.1);
                 myScene.scene.add(root);
 
                 var container = document.getElementById("dddcontain");
-                var mmeo = $("#mmeo");
+                var mmeo = document.getElementById('mmeo');
 
                 container.addEventListener('mouseenter', function () {
                     myScene.isHovering = true;
@@ -64,17 +64,15 @@ var people_stop_follow = false;
                     requestAnimationFrame(animate);
                     var delta = myScene.clock.getDelta();
 
-                    if (!container.isHovering) {
+                    if (!myScene.isHovering) {
                         root.rotation.y += delta*3;
-                        mmeo.style.color = `#f26419`;
-                        mmeo.style.fontSize = `5rem`;
-                        mmeo.style.textShadow = `5px 5px white`;
+                        mmeo.style.color = '#FD521B';
+                        mmeo.style.fontSize = '3rem';
                     }
                     else{
                         root.rotation.y = delta;
-                        mmeo.style.color = `#FFFF1F`;
-                        mmeo.style.fontSize = `6rem`;
-                        mmeo.style.textShadow = `5px 5px #2f298a`;
+                        mmeo.style.color = '#5774CD';
+                        mmeo.style.fontSize = '3.5rem';
                     }
 
                     myScene.renderer.render(myScene.scene, myScene.camera);
