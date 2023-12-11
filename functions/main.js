@@ -1,3 +1,4 @@
+// header toggle function
 $(document).ready(function(){
   // mobile menu toggle function
   const dlh = $("#nav-bar").height;
@@ -14,3 +15,6 @@ $(document).ready(function(){
         );
       });
 });
+
+// three link
+function three(){window.open("ddd.html");}

@@ -471,3 +471,15 @@ header{
     }
 
 }
+
+/* interesting btn codes */
+
+@keyframes flow {
+    form{transform: translateY(0px); background-color: #222; border-radius: 0px;}
+    to{transform: translateY(-10px); background-color: #c78c06; border-radius: 10px;}
+}
+
+button:hover{
+    cursor: pointer;
+    animation: flow 0.5s infinite alternate;
+}
