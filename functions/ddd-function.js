@@ -43,7 +43,7 @@ var people_stop_follow = false;
     function loadObjects() {
         var loader = new THREE.GLTFLoader();
         loader.load(
-            '../three/logo-coin.glb',
+            'three/logo-coin.glb',
             function (glb) {
                 const root = glb.scene;
                 root.scale.set(0.1, 0.1, 0.1);
@@ -151,3 +151,5 @@ function people_follow(){
     midBuilding.style.transform = `translateX(${adjmxss}px)`;
     });
 }
+
+
