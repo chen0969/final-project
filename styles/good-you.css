@@ -1,0 +1,19 @@
+.st0{fill:#FFEACC;}
+.st1{fill:#231F20;}
+
+@keyframes show {
+    0%{opacity: 0; transform: rotate(50deg);}
+    80%{opacity: 1; transform: rotate(0deg);}
+    100%{opacity: 1; transform: rotate(0deg);}
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#good-for-you{
+    animation: show 1s infinite alternate;
+}

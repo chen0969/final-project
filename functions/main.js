@@ -18,3 +18,7 @@ $(document).ready(function(){
 
 // three link
 function three(){window.open("ddd.html");}
+
+function goodYou(){window.open("good-for-you.html");}
+
+function innocent(){window.open("innocent.html");}
