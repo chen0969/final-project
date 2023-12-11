@@ -451,20 +451,16 @@ header{
 
     #contact{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, auto);
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
         align-items: start;
         gap: 10px;
-        grid-template-areas: 
-        "ct ct"
-        "cm cl"
-        "ch ch";
     }
 
-    #c-t{grid-area: ct;}
-    #c-m{grid-area: cm;}
-    #c-l{grid-area: cl;}
-    #c-h{grid-area: ch;}
+    #contact-table{grid-column: 1/3; grid-row: 1/2;}
+    #contact-message{grid-column: 1/2; grid-row: 2/3;}
+    #contact-location{grid-column: 2/3; grid-row: 2/3;}
+    #contact-hour{grid-column: 1/3; grid-row: 3/4;}
 
     #contact-form{gap: 20px;}
 
